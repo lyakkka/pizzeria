@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ru" id="html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">VIVA LA PIZZA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo" id="logo">VIVA LA PIZZA</div>
+        <nav>
+            <ul>
+                <li><a href="index.html" id="menu-link">МЕНЮ</a></li>
+                <li><a href="#promotions" class="nav-link" id="promotions-link">АКЦИИ</a></li>
+                <li><a href="#delivery" class="nav-link" id="delivery-link">ДОСТАВКА</a></li>
+                <li class="phone"><a href="tel:+77712957528">+7 771 295 75 28</a></li>
+                <li class="lang"><a href="#" onclick="changeLanguage('ru')">RU</a></li>
+                <li class="lang"><a href="#" onclick="changeLanguage('kz')">KZ</a></li>
+                <li class="lang"><a href="#" onclick="changeLanguage('en')">EN</a></li>
+                <li class="cart-icon"><a href="cart.html"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1 id="hero-title">Небольшое уютное место на пешеходной улице города</h1>
+            <p id="hero-text">С домашней пиццей и оригинальными итальянскими рецептами. Попробуйте кусочек или закажите целую пиццу. У нас работает круглосуточная доставка по городу в течение часа. Мы привезем пиццу горячей!</p>
+        </div>
+    </section>
+
+    <section class="menu">
+        <h2 id="menu-title">Меню Viva la pizza</h2>
+        <div class="menu-category">
+            <div class="menu-items">
+                <!-- First row of 3 pizzas -->
+                <div class="menu-item">
+                    <div class="pizza-image-container">
+                        <img src="https://media.dodostatic.net/image/r:584x584/01962455dc34712a8cb6f6f6ecd2e3f6.avif" alt="Креветки с песто" loading="lazy">
+                    </div>
+                    <h3>Креветки с песто</h3>
+                    <p>Креветки, томаты, шампиньоны, соус песто, моцарелла, итальянские травы, фирменный томатный соус.</p>
+                    <div class="price">от 3 350 тг. <button class="add-to-cart" data-name="Креветки с песто" data-price="3350">Выбрать</button></div>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="pizza-image-container">
+                        <img src="https://media.dodostatic.net/image/r:584x584/0195dc9b4b337495885960cd8096b513.avif" alt="С кониной" loading="lazy">
+                    </div>
+                    <h3>С кониной</h3>
+                    <p>Шумук, сладкий перец, красный лук, моцарелла, фирменный соус альфредо</p>
+                    <div class="price">от 3 350 тг. <button class="add-to-cart" data-name="С кониной" data-price="3350">Выбрать</button></div>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="pizza-image-container">
+                        <img src="https://media.dodostatic.net/image/r:584x584/0195dc9a4c9b7351921143730d531529.avif" alt="Чилл Грилл" loading="lazy">
+                    </div>
+                    <h3>Чилл Грилл</h3>
+                    <p>Цыганское, соленые огуречки, красный лук, соус гриль таблет, моцарелла, честок, фирменный соус альфредо</p>
+                    <div class="price">от 2 850 тг. <button class="add-to-cart" data-name="Чилл Грилл" data-price="2850">Выбрать</button></div>
+                </div>
+            </div>
+            
+            <!-- Second row of 3 pizzas -->
+            <div class="menu-items">
+                <div class="menu-item">
+                    <div class="pizza-image-container">
+                        <img src="https://media.dodostatic.net/image/r:584x584/0195dc96b2da74aabee7a671f52b731b.avif" alt="Пицца из половинок" loading="lazy">
+                    </div>
+                    <h3>Пицца из половинок</h3>
+                    <p>Соберите свою пиццу 35 см с двумя разными вкусами</p>
+                    <div class="price">от 3 800 тг. <button class="add-to-cart" data-name="Пицца из половинок" data-price="3800">Собрать</button></div>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="pizza-image-container">
+                        <img src="https://media.dodostatic.net/image/r:584x584/11ee7d5f837255b58b25a62c60ffdb38.avif" alt="Сырная" loading="lazy">
+                    </div>
+                    <h3>Сырная</h3>
+                    <p>Моцарелла, сыры чеддер и пармезан, соус альфредо</p>
+                    <div class="price">от 1 990 тг. <button class="add-to-cart" data-name="Сырная" data-price="1990">Выбрать</button></div>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="pizza-image-container">
+                        <img src="https://media.dodostatic.net/image/r:584x584/11ee7d5f9d4f264d98d40bf411913db1.avif" alt="Пепперони фреш" loading="lazy">
+                    </div>
+                    <h3>Пепперони фреш</h3>
+                    <p>Пикапиада пепперона, мно-о-ого моцарелла, томаты и томатный соус</p>
+                    <div class="price">от 2 240 тг. <button class="add-to-cart" data-name="Пепперони фреш" data-price="2240">Выбрать</button></div>
+                </div>
+            </div>
+            
+            <!-- Third row of 3 pizzas -->
+            <div class="menu-items">
+                <div class="menu-item">
+                    <div class="pizza-image-container">
+                        <img src="https://media.dodostatic.net/image/r:584x584/11ee7d5f6df65f019bf69e6d8b69551f.avif" alt="Ветчина и сыр" loading="lazy">
+                    </div>
+                    <h3>Ветчина и сыр</h3>
+                    <p>Ветчина, моцарелла и соус альфредо — просто и со вкусом</p>
+                    <div class="price">от 2 240 тг. <button class="add-to-cart" data-name="Ветчина и сыр" data-price="2240">Выбрать</button></div>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="pizza-image-container">
+                        <img src="https://media.dodostatic.net/image/r:584x584/11ee7d5fabaed8998cac0985bfb698fa.avif" alt="Двойной цыпленок" loading="lazy">
+                    </div>
+                    <h3>Двойной цыпленок</h3>
+                    <p>Цыпленок, моцарелла, соус альфредо</p>
+                    <div class="price">от 2 290 тг. <button class="add-to-cart" data-name="Двойной цыпленок" data-price="2290">Выбрать</button></div>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="pizza-image-container">
+                        <img src="https://media.dodostatic.net/image/r:584x584/0195dc95aa35712e80fc35c3e412e6b1.avif" alt="Песто" loading="lazy">
+                    </div>
+                    <h3>Песто</h3>
+                    <p>Сочный цыпленок с пикантным соусом песто, кубики брынзы, томаты, моцарелла и соус альфредо</p>
+                    <div class="price">от 3 040 тг. <button class="add-to-cart" data-name="Песто" data-price="3040">Выбрать</button></div>
+                </div>
+            </div>
+            
+            <!-- Fourth row (1 pizza) -->
+            <div class="menu-items">
+                <div class="menu-item">
+                    <div class="pizza-image-container">
+                        <img src="https://media.dodostatic.net/image/r:584x584/11ee7d5f84d55746a7eeef68cd89c1b1.avif" alt="Сырный цыпленок" loading="lazy">
+                    </div>
+                    <h3>Сырный цыпленок</h3>
+                    <p>Цыпленок, моцарелла, сыры чеддер и пармезан, сырный соус, томаты, соус альфредо, чеснок</p>
+                    <div class="price">от 3 040 тг. <button class="add-to-cart" data-name="Сырный цыпленок" data-price="3040">Выбрать</button></div>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="pizza-image-container">
+                        <img src="https://media.dodostatic.net/image/r:584x584/11ee7d5fd6097096b601585d57f44a6f.avif" alt="Жюльен" loading="lazy">
+                    </div>
+                    <h3>Жюльен</h3>
+                    <p>Цыпленок, шампиньоны, ароматный грибной соус, лук, сухой чеснок, моцарелла, смос, сыров чеддер и пармезан, фирменный соус альфредо</p>
+                    <div class="price">от 3 040 тг. <button class="add-to-cart" data-name="Жюльен" data-price="3040">Выбрать</button></div>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="pizza-image-container">
+                        <img src="https://media.dodostatic.net/image/r:584x584/11ee7d5f92dfcd9e84600c4dd6b916d4.avif" alt="Четыре сезона" loading="lazy">
+                    </div>
+                    <h3>Четыре сезона</h3>
+                    <p>Мно-о-ого моцареллы, ветчина, пикантная пептероны, кубики брынзы, томаты, шампиньоны, томатный соус, итальянские травы</p>
+                    <div class="price">от 2 850 тг. <button class="add-to-cart" data-name="Четыре сезона" data-price="2850">Выбрать</button></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="delivery-info">
+        <h2 id="delivery-title">Доставка и оплата</h2>
+        <div class="delivery-content">
+            <div class="delivery-highlight">
+                <h3 id="delivery-highlight-title">60 МИНУТ ИЛИ ПИЦЦА БЕСПЛАТНО</h3>
+                <p id="delivery-highlight-text">Если мы не успеем доставить любые продукты, кроме сувениров и соусов, за 60 минут, вы получите извинительную пиццу. Её можно будет добавить в один из следующих заказов.</p>
+            </div>
+            
+            <div class="delivery-details">
+                <p><strong id="min-order">От 3 500 тг.</strong> <span id="min-order-text">Минимальная сумма доставки</span></p>
+                <p><strong id="max-cash">25 000 тг.</strong> <span id="max-cash-text">Максимальная сумма при оплате наличными</span></p>
+                <p id="product-note">Изображения продуктов могут отличаться от продуктов в заказе.</p>
+            </div>
+        </div>
+    </section>
+    <section id="promotions" class="promo-section">
+        <h2 id="promo-title">КАЖДАЯ ПЯТАЯ ПИЦЦА БЕСПЛАТНО</h2>
+        <p id="promo-text">Акция действует при заказе от 4 пицц</p>
+        <a href="tel:+77712957528" class="btn" id="order-btn">Сделать заказ: +7 771 295 75 28</a>
+    </section>
+
+    <section id="delivery" class="delivery-section">
+        <h2 id="location-title">ГДЕ МЫ НАХОДИМСЯ</h2>
+        <div class="delivery-content">
+            <div class="delivery-info">
+                <h3 id="order-title">СДЕЛАЙТЕ ЗАКАЗ</h3>
+                <p id="order-text">Наш телефон:<br><a href="tel:+77712957528">+7 771 295 75 28</a></p>
+                
+                <h3 id="visit-title">ПРИХОДИТЕ К НАМ</h3>
+                <p id="visit-text">ул. Сыганак 16<br>Пн-Вс 10:00 – 22:00</p>
+                
+                <h3 id="questions-title">ПО ВСЕМ ВОПРОСАМ</h3>
+                <p id="questions-text">Пишите на почту:<br><a href="mailto:adilyazzat2005@gmail.com">adilyazzat2005@gmail.com</a></p>
+            </div>
+                <!-- Here will be the map -->
+                <div class="delivery-map">
+                    <img src="https://www.google.com/maps/vt/data=45opaLG_dFHtITGVWITDxcxZMRZMc-sj4YL6m12HAgdYYa4GsvlG_YZvoZypm4AbPrI6cQhPV2fG0X71NVWqy0Jn5E09T9b9C-dkWSlb5f0lIfLsSS7szFod7UoQCe5QVc7K84tLFP6XYS9y2Z1bfLeYqPS-5VeKTHEvUrIQmL_I5aQiczWwbwKGkW6BrGpm-yLzln-wmq-neV3hSSKsy3I" alt="Зона доставки" loading="lazy">
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="footer-social">
+            <a href="https://www.instagram.com/l.__.lya" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/ваш_facebook" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://wa.me/77712957528" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+        <div class="footer-text">
+            <p id="copyright">© 2025 VIVA LA PIZZA. Все права защищены.</p>
+            <p id="cookies-text">Мы используем cookies для быстрой и удобной работы сайта. Продолжая пользоваться сайтом, вы принимаете условия обработки персональных данных.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
